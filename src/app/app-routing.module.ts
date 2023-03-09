@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ProductosComponent } from './productos/productos.component';
+import { EmpleadosComponent } from './empleados/empleados.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ChildAComponent } from './child-a/child-a.component';
@@ -22,7 +22,7 @@ const routes: Routes = [
     ],
   },
 
-  { path: 'productos', component: ProductosComponent },
+  { path: 'empleados', component: EmpleadosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PagenotfoundComponent },
